@@ -17,15 +17,12 @@ Console.Clear();
 
 _kondital = Kondital.BeregnKondital(_hvilepuls, _maxpuls);
 Console.WriteLine($"Kondital: {_kondital} ml/kg/min");
-
-Console.WriteLine($"Iltoptagelse: {BeregnIltoptagelse(_hvilepuls, _vægt)} l/ml");
+Console.WriteLine($"Max Iltoptagelse: {BeregnIltoptagelse(_kondital, _vægt)} l/ml");
 
 static double BeregnIltoptagelse(int kondital, double vægt)
 {
     return Math.Round(kondital * vægt / 1000, 1);
 }
-
-
 
 static int ValueChecker()
 {
