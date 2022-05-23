@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace KonditalProject
 {
-    public class Kondital
+    class Kondital
     {
-
+        public static string BeregnKondital(int hvilepuls, int maxpuls)
+        {
+            return Math.Round((double)maxpuls / (double)hvilepuls * 15.3).ToString();
+        }
     }
 }

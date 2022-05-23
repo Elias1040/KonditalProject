@@ -20,3 +20,5 @@ while (!int.TryParse(Console.ReadLine(), out maxpuls))
     Console.WriteLine("maxpuls:");
 }
 Console.Clear();
+
+Console.WriteLine("Kondital: " + Kondital.BeregnKondital(hvilepuls, maxpuls));
