@@ -10,7 +10,7 @@ namespace KonditalProject
     {
         public static int BeregnKondital(int hvilepuls, int maxpuls)
         {
-            return (int)Math.Round(((double)maxpuls / (double)hvilepuls) * 15.3);
+            return (int)Math.Round(maxpuls / hvilepuls * 15.3);
         }
     }
 }
