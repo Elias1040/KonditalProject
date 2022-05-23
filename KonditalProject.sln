@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonditalProject", "KonditalProject\KonditalProject.csproj", "{7F03FEA0-E9F5-4CF9-9E28-CD2886AC601B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F03FEA0-E9F5-4CF9-9E28-CD2886AC601B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F03FEA0-E9F5-4CF9-9E28-CD2886AC601B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F03FEA0-E9F5-4CF9-9E28-CD2886AC601B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F03FEA0-E9F5-4CF9-9E28-CD2886AC601B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B2D556C-633E-4A54-9693-60F96348E3BD}
+	EndGlobalSection
+EndGlobal
