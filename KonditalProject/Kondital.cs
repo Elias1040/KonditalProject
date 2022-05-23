@@ -8,9 +8,9 @@ namespace KonditalProject
 {
     class Kondital
     {
-        public static string BeregnKondital(int hvilepuls, int maxpuls)
+        public static int BeregnKondital(int hvilepuls, int maxpuls)
         {
-            return Math.Round((double)maxpuls / (double)hvilepuls * 15.3).ToString();
+            return (int)Math.Round(((double)maxpuls / (double)hvilepuls) * 15.3);
         }
     }
 }
