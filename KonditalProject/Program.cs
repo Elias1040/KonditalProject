@@ -1,4 +1,5 @@
-﻿int hvilepuls, maxpuls;
+﻿using KonditalProject;
+int hvilepuls, maxpuls;
 
 Console.WriteLine("hvilepuls:");
 while (!int.TryParse(Console.ReadLine(), out hvilepuls))
