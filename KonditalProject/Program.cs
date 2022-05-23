@@ -25,3 +25,6 @@ static int ValueChecker()
     }
     return _value;
 }
+Console.Clear();
+
+Console.WriteLine("Kondital: " + Kondital.BeregnKondital(hvilepuls, maxpuls));
