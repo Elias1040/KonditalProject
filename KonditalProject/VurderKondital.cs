@@ -10,69 +10,205 @@ namespace KonditalProject
     {
         public static string Vurder(int kondital, int alder, char køn)
         {
-            string _kondiTilstand;
             if (køn == Char.ToLower('m'))
             {
-                if (alder >= 20 && alder <= 29)
+                switch (alder)
                 {
-                    if (kondital <= 28)
-                    {
-
-                    }
-                    else if (kondital >= 29 && kondital <= 34)
-                    {
-
-                    }
-                    else if (kondital >= 35 && kondital <= 43)
-                    {
-
-                    }
-                    else if (kondital >= 44 && kondital <= 48)
-                    {
-
-                    }
-                    else if (kondital >= 49)
-                    {
-
-                    }
-                } 
-                else if (alder >= 30 && alder <= 39)
-                {
-
-                }
-                else if (alder >= 40 && alder <= 49)
-                {
-
-                }
-                else if (alder >= 50 && alder <= 65)
-                {
-
+                    case < 29:
+                        switch (kondital)
+                        {
+                            case < 38:
+                                return "lav";
+                                break;
+                            case < 43:
+                                return "ret lav";
+                                break;
+                            case < 51:
+                                return "middel";
+                                break;
+                            case < 56:
+                                return "god";
+                                break;
+                            case > 57:
+                                return "meget god";
+                                break;
+                        }
+                        break;
+                    case < 39:
+                        switch (kondital)
+                        {
+                            case < 34:
+                                return "lav";
+                                break;
+                            case < 39:
+                                return "ret lav";
+                                break;
+                            case < 47:
+                                return "middel";
+                                break;
+                            case < 51:
+                                return "god";
+                                break;
+                            case > 52:
+                                return "meget god";
+                                break;
+                        }
+                        break;
+                    case < 49:
+                        switch (kondital)
+                        {
+                            case < 30:
+                                return "lav";
+                                break;
+                            case < 35:
+                                return "ret lav";
+                                break;
+                            case < 43:
+                                return "middel";
+                                break;
+                            case < 47:
+                                return "god";
+                                break;
+                            case > 48:
+                                return "meget god";
+                                break;
+                        }
+                        break;
+                    case < 59:
+                        switch (kondital)
+                        {
+                            case < 25:
+                                return "lav";
+                                break;
+                            case < 31:
+                                return "ret lav";
+                                break;
+                            case < 39:
+                                return "middel";
+                                break;
+                            case < 43:
+                                return "god";
+                                break;
+                            case > 44:
+                                return "meget god";
+                                break;
+                        }
+                        break;
+                    case < 69:
+                        switch (kondital)
+                        {
+                            case < 21:
+                                return "lav";
+                                break;
+                            case < 26:
+                                return "ret lav";
+                                break;
+                            case < 35:
+                                return "middel";
+                                break;
+                            case < 39:
+                                return "god";
+                                break;
+                            case > 40:
+                                return "meget god";
+                                break;
+                        }
+                        break;
+                    default:
+                        return "kan ikke beregnes";
+                        break;
                 }
             }
-            else
+            else if (køn == Char.ToLower('m'))
             {
-                if (alder >= 20 && alder <= 29)
+                switch (alder)
                 {
-
-                }
-                else if (alder >= 30 && alder <= 39)
-                {
-
-                }
-                else if (alder >= 40 && alder <= 49)
-                {
-
-                }
-                else if (alder >= 50 && alder <= 59)
-                {
-
-                }
-                else if (alder >= 60 && alder <= 69)
-                {
-
+                    case < 29:
+                        switch (kondital)
+                        {
+                            case < 28:
+                                return "lav";
+                                break;
+                            case < 34:
+                                return "ret lav";
+                                break;
+                            case < 43:
+                                return "middel";
+                                break;
+                            case < 48:
+                                return "god";
+                                break;
+                            case > 49:
+                                return "meget god";
+                                break;
+                        }
+                        break;
+                    case < 39:
+                        switch (kondital)
+                        {
+                            case < 27:
+                                return "lav";
+                                break;
+                            case < 32:
+                                return "ret lav";
+                                break;
+                            case < 41:
+                                return "middel";
+                                break;
+                            case < 47:
+                                return "god";
+                                break;
+                            case > 48:
+                                return "meget god";
+                                break;
+                        }
+                        break;
+                    case < 49:
+                        switch (kondital)
+                        {
+                            case < 25:
+                                return "lav";
+                                break;
+                            case < 31:
+                                return "ret lav";
+                                break;
+                            case < 40:
+                                return "middel";
+                                break;
+                            case < 45:
+                                return "god";
+                                break;
+                            case > 46:
+                                return "meget god";
+                                break;
+                        }
+                        break;
+                    case < 65:
+                        switch (kondital)
+                        {
+                            case < 21:
+                                return "lav";
+                                break;
+                            case < 28:
+                                return "ret lav";
+                                break;
+                            case < 36:
+                                return "middel";
+                                break;
+                            case < 41:
+                                return "god";
+                                break;
+                            case > 42:
+                                return "meget god";
+                                break;
+                        }
+                        break;
+                    default:
+                        return "kan ikke beregnes";
+                        break;
                 }
             }
-            return;
+            return "kan ikke beregnes";
         }
     }
 }

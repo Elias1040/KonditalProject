@@ -17,7 +17,27 @@ Console.Clear();
 
 _kondital = Kondital.BeregnKondital(_hvilepuls, _maxpuls);
 Console.WriteLine($"Kondital: {_kondital} ml/kg/min");
-Console.WriteLine($"Max Iltoptagelse: {BeregnIltoptagelse(_kondital, _vægt)} l/ml");
+
+double iltOptagelse = BeregnIltoptagelse(_kondital, _vægt);
+Console.WriteLine($"Max Iltoptagelse: {iltOptagelse} l/ml");
+
+Console.Clear();
+Console.WriteLine("Alder:");
+int alder = ValueChecker();
+
+Console.Clear();
+Console.WriteLine("Køn (m/f): ");
+char køn = Console.ReadKey().KeyChar;
+while (køn != 'm' && køn != 'f')
+{
+    Console.WriteLine("Ugyldig værdi");
+    Console.ReadKey();
+    Console.Clear();
+    Console.WriteLine("Køn(m/f)");
+    køn = Console.ReadKey().KeyChar;
+}
+Console.Clear();
+Console.WriteLine($"Kondition: {VurderKondital.Vurder(_kondital, alder, køn)}");
 
 static double BeregnIltoptagelse(int kondital, double vægt)
 {
